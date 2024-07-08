@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   --background: #e6dace;
   --primary: #0050ff;
@@ -12,23 +13,85 @@ body {
   font-size: var(--font-size);
 }
 
-header {
-  height: 125px;
-  min-height: 10%;
+header .box {
+  width: 25px;
+  height: 25px;
+  background-color: var(--primary);
 }
 
+header,
 footer {
   height: 125px;
   min-height: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+header .left-side {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header .name {
+  font-size: 25px;
+  line-height: 1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+header .position {
+  font-size: 17px;
+}
+
+footer .label {
+  font-weight: 500;
 }
 
 main {
   background: yellow;
   height: calc(100vh - 125px - 125px);
-  min-height: calc(100vh - 10% - 10%);
+  max-height: calc(100vh - 10% - 10%);
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.socials img {
+  transition: 0.4s;
+}
+
+.socials img:hover {
+  transition: 0.4s;
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--text-color);
+}
+
+ul {
+  padding-inline-start: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+ul li {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }

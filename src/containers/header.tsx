@@ -1,13 +1,21 @@
 const Header = () => {
   return (
     <header>
-      <div>
-        <div></div>
+      <div className="left-side">
+        <div className="box"></div>
         <a href="/">
-          <span>Nikolay Zhekov</span>
-          <span>/ SOFTWARE ENGINEER</span>
+          <span className="name">Nikolay Zhekov</span>
+          <span className="position"> / SOFTWARE ENGINEER</span>
         </a>
       </div>
+      <nav>
+        <ul>
+          <li>ABOUT ME</li>
+          <li>RESUME</li>
+          <li>PROJECTS</li>
+          <li>CONTACT</li>
+        </ul>
+      </nav>
     </header>
   );
 };
