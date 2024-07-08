@@ -55,9 +55,23 @@ footer .label {
 }
 
 main {
-  background: yellow;
+  background: linear-gradient(to right, var(--background) 50%, white 50%);
   height: calc(100vh - 125px - 125px);
   max-height: calc(100vh - 10% - 10%);
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  background: var(--background);
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section {
+  height: 100%;
 }
 
 .socials {
@@ -81,6 +95,11 @@ main {
 a {
   text-decoration: none;
   color: var(--text-color);
+  transition: 0.4s;
+}
+
+a.active {
+  color: var(--primary);
 }
 
 ul {

@@ -1,3 +1,6 @@
+import { NavLink } from "react-router-dom";
+import { routes } from "../pages/router";
+
 const Header = () => {
   return (
     <header>
@@ -10,10 +13,11 @@ const Header = () => {
       </div>
       <nav>
         <ul>
-          <li>ABOUT ME</li>
-          <li>RESUME</li>
-          <li>PROJECTS</li>
-          <li>CONTACT</li>
+          {routes.map((route) => (
+            <NavLink key={route.key} to={route.route}>
+              {route.name.toUpperCase()}
+            </NavLink>
+          ))}
         </ul>
       </nav>
     </header>
