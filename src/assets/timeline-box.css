@@ -1,0 +1,52 @@
+.timeline-box {
+  width: 100%;
+  padding: 60px 35px;
+  display: flex;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.timeline-box > div {
+  width: 40%;
+}
+
+.timeline-box > div + div {
+  width: 60%;
+}
+
+.timeline-box ul {
+  display: flex;
+  flex-flow: column;
+}
+
+.timeline-box .timeline-main h4 {
+  color: var(--primary);
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.timeline-box .timeline-main h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 200;
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+}
+
+.timeline-box .timeline-main h5 {
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.timeline-box .timeline-main h6 {
+  margin-bottom: 0;
+  margin-top: 0.25rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+}

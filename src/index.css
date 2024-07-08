@@ -15,7 +15,7 @@ body {
   font-size: var(--font-size);
 }
 
-header .box {
+.box {
   width: 25px;
   height: 25px;
   background-color: var(--primary);
@@ -62,7 +62,7 @@ footer img {
 }
 
 main {
-  background: linear-gradient(to right, var(--background) 40%, white 40%);
+  background: linear-gradient(to right, var(--background) 44%, white 44%);
   height: calc(100vh - 125px - 125px);
   max-height: calc(100vh - 10% - 10%);
 }
@@ -156,4 +156,13 @@ a.button.secondary:hover {
   border-color: var(--primary);
   color: var(--white);
   transition: 0.4s;
+}
+
+section.full {
+  background-color: var(--background);
+}
+
+.content-box {
+  max-width: 725px;
+  width: 90%;
 }

@@ -29,7 +29,7 @@ const AboutMe = () => {
         </div>
         <div className="text">
           <p className="greeting">Hello</p>
-          <p className="presentation">I'm full-stack developer</p>
+          <p className="presentation">I'm software engineer</p>
           <div className="buttons">
             <a
               href={routes.find((route) => route.key === "resume")?.route}

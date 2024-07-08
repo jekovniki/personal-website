@@ -1,5 +1,11 @@
+import { Title } from "../components/title";
+
 const Contact = () => {
-  return <section>Contact</section>;
+  return (
+    <section className="full">
+      <Title>Contact</Title>
+    </section>
+  );
 };
 
 export default Contact;

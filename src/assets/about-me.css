@@ -16,6 +16,7 @@ section {
 .about .card {
   background-color: var(--background-light);
   height: 525.78px;
+  margin-top: -1.5rem;
 }
 
 .about .card img {
@@ -29,10 +30,7 @@ section {
 .about .card {
   width: 375px;
   font-family: "Montserrat", sans-serif;
-  box-shadow: var(
-    -11.31px 11.31px 17px 0px rgba(138, 131, 124, 0.23),
-    0 1px 4px rgba(0, 0, 0, 0.6)
-  );
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .about .card .content {
@@ -98,8 +96,9 @@ section {
 }
 
 .about .description p {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 300;
+  line-height: 24px;
 }
 
 .about .buttons {
