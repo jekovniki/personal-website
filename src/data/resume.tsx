@@ -43,7 +43,7 @@ export const EXPERIENCE: TimelineBoxProps[] = [
   {
     period: "May 2021 - Mar 2023",
     position: "Full Stack Developer",
-    companyName: "Klips (Finovation)",
+    companyName: "Klips",
     companyLocation: "Sofia, Bulgaria",
     text: (
       <div>
@@ -66,48 +66,48 @@ export const EXPERIENCE: TimelineBoxProps[] = [
       </div>
     ),
   },
-  // {
-  //   period: "Jan 2020 - Sep 2020",
-  //   position: "Website administrator",
-  //   companyName: "Eurostar-BG",
-  //   companyLocation: "Sofia, Bulgaria",
-  //   text: (
-  //     <div>
-  //       <ul>
-  //         <li>
-  //           <strong>Website administration</strong> | Build web pages and
-  //           maintain the content for our clients websites. Use content
-  //           management systems like: Adobe Experience Manger(AEM), Drupal (7, 8,
-  //           9), WordPress, Typo3, Shopware, Shopify, e-spirit cms, OpenCMS
-  //         </li>
-  //         <li>
-  //           <strong>HTML Templating</strong> | Build html templates for the
-  //           mentioned clients using HTML, CSS and vanilla JS.
-  //         </li>
-  //       </ul>
-  //     </div>
-  //   ),
-  // },
-  // {
-  //   period: "Aug 2016 - Jan 2020",
-  //   position: "Website administrator",
-  //   companyName: "MODO",
-  //   companyLocation: "Sofia, Bulgaria",
-  //   text: (
-  //     <div>
-  //       <ul>
-  //         <li>
-  //           <strong>Website administration</strong> | Build web pages and
-  //           maintain the content for our clients websites. Use content
-  //           management systems like: Adobe Experience Manger(AEM), Drupal (7, 8,
-  //           9), WordPress, Typo3, Shopware, Shopify, e-spirit cms, OpenCMS
-  //         </li>
-  //         <li>
-  //           <strong>HTML Templating</strong> | Build html templates for the
-  //           mentioned clients using HTML, CSS and vanilla JS.
-  //         </li>
-  //       </ul>
-  //     </div>
-  //   ),
-  // },
+  {
+    period: "Jan 2020 - Sep 2020",
+    position: "Website administrator",
+    companyName: "Eurostar-BG",
+    companyLocation: "Sofia, Bulgaria",
+    text: (
+      <div>
+        <ul>
+          <li>
+            <strong>Website administration</strong> | Build web pages and
+            maintain the content for our clients websites. Use content
+            management systems like: Adobe Experience Manger(AEM), Drupal (7, 8,
+            9), WordPress, Typo3, Shopware, Shopify, e-spirit cms, OpenCMS
+          </li>
+          <li>
+            <strong>HTML Templating</strong> | Build html templates for the
+            mentioned clients using HTML, CSS and vanilla JS.
+          </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    period: "Aug 2016 - Jan 2020",
+    position: "Website administrator",
+    companyName: "MODO",
+    companyLocation: "Sofia, Bulgaria",
+    text: (
+      <div>
+        <ul>
+          <li>
+            <strong>Website administration</strong> | Build web pages and
+            maintain the content for our clients websites. Use content
+            management systems like: Adobe Experience Manger(AEM), Drupal (7, 8,
+            9), WordPress, Typo3, Shopware, Shopify, e-spirit cms, OpenCMS
+          </li>
+          <li>
+            <strong>HTML Templating</strong> | Build html templates for the
+            mentioned clients using HTML, CSS and vanilla JS.
+          </li>
+        </ul>
+      </div>
+    ),
+  },
 ];

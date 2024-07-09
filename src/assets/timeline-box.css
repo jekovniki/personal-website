@@ -1,5 +1,5 @@
 .timeline-box {
-  width: 100%;
+  width: auto;
   padding: 60px 35px;
   display: flex;
   margin-bottom: 2rem;
@@ -9,11 +9,11 @@
 }
 
 .timeline-box > div {
-  width: 40%;
+  width: 35%;
 }
 
 .timeline-box > div + div {
-  width: 60%;
+  width: 65%;
 }
 
 .timeline-box ul {

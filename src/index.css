@@ -24,7 +24,6 @@ body {
 header,
 footer {
   height: 125px;
-  min-height: 10%;
   padding-left: 5%;
   padding-right: 5%;
   display: flex;
@@ -63,8 +62,10 @@ footer img {
 
 main {
   background: linear-gradient(to right, var(--background) 44%, white 44%);
-  height: calc(100vh - 125px - 125px);
-  max-height: calc(100vh - 10% - 10%);
+  min-height: calc(100vh - 125px - 125px);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 main::before {
@@ -160,6 +161,7 @@ a.button.secondary:hover {
 
 section.full {
   background-color: var(--background);
+  width: 100%;
 }
 
 .content-box {

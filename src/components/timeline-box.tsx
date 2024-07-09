@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 import "../assets/timeline-box.css";
 
 export interface TimelineBoxProps {
@@ -6,7 +6,7 @@ export interface TimelineBoxProps {
   position: string;
   companyName: string;
   companyLocation: string;
-  text: any;
+  text: ReactNode;
 }
 
 export const TimelineBox: FC<TimelineBoxProps> = ({
