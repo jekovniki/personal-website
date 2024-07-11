@@ -9,7 +9,10 @@ const Header: FC = () => {
         <div className="box"></div>
         <Link to="/">
           <span className="name">Nikolay Zhekov</span>
-          <span className="position"> / SOFTWARE ENGINEER</span>
+          <span className="position">
+            {" "}
+            <span className="slash">/</span> SOFTWARE ENGINEER
+          </span>
         </Link>
       </div>
       <nav>
