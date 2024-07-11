@@ -22,7 +22,12 @@ export const ProjectBox: FC<ProjectBoxProps> = ({
         </div>
         <div className="text">{text}</div>
       </div>
-      <img src={image} alt={`${name} | ${role}`} title={`${name} | ${role}`} />
+      <img
+        src={image}
+        alt={`${name} | ${role}`}
+        title={`${name} | ${role}`}
+        loading="lazy"
+      />
     </div>
   );
 };

@@ -6,6 +6,7 @@ import twitterIcon from "../assets/twitter.svg";
 import linkedinIcon from "../assets/linkedin.svg";
 import usePageLoad from "../hooks/usePageLoad";
 import useWindowWidth from "../hooks/useWindowWidth";
+import { Link } from "react-router-dom";
 
 const AboutMe: FC = () => {
   const isLoaded = usePageLoad();
@@ -16,7 +17,7 @@ const AboutMe: FC = () => {
       <div className="about">
         <div className={`card ${isLoaded ? "loaded" : ""}`}>
           <div className="content">
-            <img src={me} alt="Nikolay" />
+            <img src={me} alt="Nikolay" loading="lazy" />
             <h1>
               Nikolay
               <br />
@@ -45,16 +46,16 @@ const AboutMe: FC = () => {
           <div className="socials">
             <div>
               <a href="https://github.com/jekovniki" target="_blank">
-                <img src={githubIcon} alt="GitHub" />
+                <img src={githubIcon} alt="GitHub" loading="lazy" />
               </a>
               <a
                 href="https://www.linkedin.com/in/nikolay-zhekov-529547167/"
                 target="_blank"
               >
-                <img src={linkedinIcon} alt="LinkedIn" />
+                <img src={linkedinIcon} alt="LinkedIn" loading="lazy" />
               </a>
               <a href="https://x.com/ZhekovN" target="_blank">
-                <img src={twitterIcon} alt="Twitter X" />
+                <img src={twitterIcon} alt="Twitter X" loading="lazy" />
               </a>
             </div>
           </div>
@@ -64,18 +65,22 @@ const AboutMe: FC = () => {
           <p className="presentation">I'm a software engineer</p>
           {windowWidth > 767 && (
             <div className="buttons">
-              <a
-                href={routes.find((route) => route.key === "resume")?.route}
+              <Link
+                to={
+                  routes.find((route) => route.key === "resume")?.route || "/"
+                }
                 className="button primary"
               >
                 {routes.find((route) => route.key === "resume")?.name}
-              </a>
-              <a
-                href={routes.find((route) => route.key === "projects")?.route}
+              </Link>
+              <Link
+                to={
+                  routes.find((route) => route.key === "projects")?.route || "/"
+                }
                 className="button secondary"
               >
                 {routes.find((route) => route.key === "projects")?.name}
-              </a>
+              </Link>
             </div>
           )}
           <div className="description">

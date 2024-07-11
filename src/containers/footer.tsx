@@ -16,16 +16,16 @@ const Footer: FC = () => {
           <div className="label">Follow</div>
           <div className="socials">
             <a href="https://github.com/jekovniki" target="_blank">
-              <img src={githubIcon} alt="GitHub" />
+              <img src={githubIcon} alt="GitHub" loading="lazy" />
             </a>
             <a
               href="https://www.linkedin.com/in/nikolay-zhekov-529547167/"
               target="_blank"
             >
-              <img src={linkedinIcon} alt="LinkedIn" />
+              <img src={linkedinIcon} alt="LinkedIn" loading="lazy" />
             </a>
             <a href="https://x.com/ZhekovN" target="_blank">
-              <img src={twitterIcon} alt="Twitter X" />
+              <img src={twitterIcon} alt="Twitter X" loading="lazy" />
             </a>
           </div>
         </div>
