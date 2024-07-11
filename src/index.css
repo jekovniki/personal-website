@@ -7,6 +7,7 @@
   --background-light: #f4ece6;
   --text-color: #000;
   --font-size: 16px;
+  --tablet: 767px;
 }
 body {
   min-height: 100vh;
@@ -103,7 +104,7 @@ footer img {
 }
 
 main {
-  background: linear-gradient(to right, var(--background) 44%, white 44%);
+  background: linear-gradient(to bottom, white 25%, var(--background) 25%);
   min-height: calc(100vh - 125px - 125px);
   display: flex;
   justify-content: space-around;
@@ -222,6 +223,12 @@ section.full {
   width: 90%;
 }
 
+@media only screen and (min-width: 767px) {
+  main {
+    background: linear-gradient(to right, var(--background) 44%, white 44%);
+  }
+}
+
 /* About page */
 
 section {
@@ -233,8 +240,13 @@ section {
 .about {
   width: 900px;
   max-width: 90vw;
-  display: flex;
-  gap: 2rem;
+}
+
+@media only screen and (min-width: 767px) {
+  .about {
+    display: flex;
+    gap: 2rem;
+  }
 }
 
 /* Card */
@@ -257,7 +269,6 @@ section {
   opacity: 0;
   margin-top: 300px;
   transition: 0.8s;
-  width: 375px;
   font-family: "Montserrat", sans-serif;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
@@ -293,6 +304,10 @@ section {
   background-color: var(--primary);
 }
 
+.about .card .buttons {
+  margin: 0 auto;
+}
+
 .about .card .content .position {
   letter-spacing: 3px;
 }
@@ -309,13 +324,19 @@ section {
   height: 25px;
 }
 
+@media only screen and (min-width: 767px) {
+  .about .card {
+    width: 375px;
+  }
+}
+
 /* Text */
 
 .about .text {
-  width: 375px;
   font-family: "Montserrat", sans-serif;
   opacity: 0;
   transition: 0.8s;
+  margin-top: 2.5rem;
 }
 
 .about .text.loaded {
@@ -324,8 +345,8 @@ section {
 }
 
 .about .greeting {
-  font-size: 100px;
-  line-height: 100px;
+  font-size: 40px;
+  line-height: 40px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   margin-top: 0;
@@ -333,7 +354,7 @@ section {
 }
 
 .about .presentation {
-  font-size: 25px;
+  font-size: 19px;
   font-weight: 500;
 }
 
@@ -348,6 +369,22 @@ section {
   align-items: center;
   gap: 1rem;
   margin: 4rem auto;
+}
+
+@media only screen and (min-width: 767px) {
+  .about .text {
+    width: 375px;
+    margin-top: unset;
+  }
+
+  .about .greeting {
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  .about .presentation {
+    font-size: 25px;
+  }
 }
 
 /* Projects */

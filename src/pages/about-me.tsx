@@ -5,9 +5,11 @@ import githubIcon from "../assets/github.svg";
 import twitterIcon from "../assets/twitter.svg";
 import linkedinIcon from "../assets/linkedin.svg";
 import usePageLoad from "../hooks/usePageLoad";
+import useWindowWidth from "../hooks/useWindowWidth";
 
 const AboutMe: FC = () => {
   const isLoaded = usePageLoad();
+  const windowWidth = useWindowWidth();
 
   return (
     <section>
@@ -21,7 +23,24 @@ const AboutMe: FC = () => {
               Zhekov
             </h1>
             <div className="line"></div>
-            <div className="position">SOFTWARE ENGINEER</div>
+            {windowWidth > 767 ? (
+              <div className="position">SOFTWARE ENGINEER</div>
+            ) : (
+              <div className="buttons">
+                <a
+                  href={routes.find((route) => route.key === "resume")?.route}
+                  className="button primary"
+                >
+                  {routes.find((route) => route.key === "resume")?.name}
+                </a>
+                <a
+                  href={routes.find((route) => route.key === "projects")?.route}
+                  className="button secondary"
+                >
+                  {routes.find((route) => route.key === "projects")?.name}
+                </a>
+              </div>
+            )}
           </div>
           <div className="socials">
             <div>
@@ -42,24 +61,26 @@ const AboutMe: FC = () => {
         </div>
         <div className={`text ${isLoaded ? "loaded" : ""}`}>
           <p className="greeting">Hello</p>
-          <p className="presentation">I'm software engineer</p>
-          <div className="buttons">
-            <a
-              href={routes.find((route) => route.key === "resume")?.route}
-              className="button primary"
-            >
-              {routes.find((route) => route.key === "resume")?.name}
-            </a>
-            <a
-              href={routes.find((route) => route.key === "projects")?.route}
-              className="button secondary"
-            >
-              {routes.find((route) => route.key === "projects")?.name}
-            </a>
-          </div>
+          <p className="presentation">I'm a software engineer</p>
+          {windowWidth > 767 && (
+            <div className="buttons">
+              <a
+                href={routes.find((route) => route.key === "resume")?.route}
+                className="button primary"
+              >
+                {routes.find((route) => route.key === "resume")?.name}
+              </a>
+              <a
+                href={routes.find((route) => route.key === "projects")?.route}
+                className="button secondary"
+              >
+                {routes.find((route) => route.key === "projects")?.name}
+              </a>
+            </div>
+          )}
           <div className="description">
             <p>
-              I'm a passionate full-stack developer who loves building web
+              I'm a passionate software engineer who loves building web
               applications. Proficient with NodeJS, Typescript, React, SQL and
               no-SQL databases.
             </p>
