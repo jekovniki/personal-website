@@ -337,7 +337,7 @@ section {
 /* Project box */
 
 .project-box {
-  display: flex;
+  /* display: flex; */
   background-color: var(--white);
   margin-bottom: 2rem;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
@@ -352,14 +352,11 @@ section {
   transition: 1s;
 }
 
-.project-box .content {
-  width: 60%;
-}
-
 .project-box img {
-  width: 40%;
+  width: 100%;
   height: auto;
   object-fit: cover;
+  margin-bottom: -5px;
 }
 
 .project-box .content .heading {
@@ -398,6 +395,21 @@ section {
   font-size: 15px;
   line-height: 1.5em;
   font-weight: 300;
+}
+
+@media only screen and (min-width: 767px) {
+  .project-box {
+    display: flex;
+  }
+
+  .project-box img {
+    width: 40%;
+    margin-bottom: 0;
+  }
+
+  .project-box .content {
+    width: 60%;
+  }
 }
 
 /* Timeline box */
