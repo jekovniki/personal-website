@@ -71,6 +71,7 @@ header .position {
   .box {
     width: 25px;
     height: 25px;
+    margin-top: unset;
   }
   header .slash {
     display: inline;
