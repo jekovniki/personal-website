@@ -1,5 +1,4 @@
 import AboutMe from "./about-me";
-import Contact from "./contact";
 import Projects from "./projects";
 import Resume from "./resume";
 
@@ -29,10 +28,13 @@ export const routes: Route[] = [
     route: "/projects",
     element: <Projects />,
   },
-  {
-    name: "Contact",
-    key: "contact",
-    route: "/contact",
-    element: <Contact />,
-  },
+  /**
+   * @note : maybe some day I will finish this
+   */
+  // {
+  //   name: "Contact",
+  //   key: "contact",
+  //   route: "/contact",
+  //   element: <Contact />,
+  // },
 ];

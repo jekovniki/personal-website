@@ -90,6 +90,17 @@ section {
   margin-top: 0.5rem;
 }
 
+.socials > div {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.follow-column {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
 .socials img {
   transition: 0.4s;
 }

@@ -4,4 +4,17 @@
   line-height: 1.5em;
   text-align: center;
   padding-bottom: 3rem;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+
+.projects .description.loaded {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
+}
+
+.projects .content-box {
+  padding-bottom: 4rem;
 }

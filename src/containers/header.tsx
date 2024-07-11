@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { routes } from "../pages/router";
 
 const Header = () => {
@@ -6,10 +6,10 @@ const Header = () => {
     <header>
       <div className="left-side">
         <div className="box"></div>
-        <a href="/">
+        <Link to="/">
           <span className="name">Nikolay Zhekov</span>
           <span className="position"> / SOFTWARE ENGINEER</span>
-        </a>
+        </Link>
       </div>
       <nav>
         <ul>

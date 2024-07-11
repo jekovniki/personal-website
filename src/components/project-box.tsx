@@ -1,5 +1,6 @@
 import { FC, ReactNode } from "react";
 import "../assets/project-box.css";
+import usePageLoad from "../hooks/usePageLoad";
 
 export interface ProjectBoxProps {
   name: string;
@@ -14,8 +15,10 @@ export const ProjectBox: FC<ProjectBoxProps> = ({
   text,
   image,
 }) => {
+  const loaded = usePageLoad();
+
   return (
-    <div className="project-box">
+    <div className={`project-box ${loaded ? "loaded" : ""}`}>
       <div className="content">
         <div className="heading">
           <div className="side-line"></div>

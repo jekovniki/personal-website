@@ -6,6 +6,13 @@
   text-align: center;
   padding-top: 60px;
   padding-bottom: 60px;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.title-wrapper.loaded {
+  opacity: 1;
+  transition: 0.8s;
 }
 
 .title-wrapper h1 {

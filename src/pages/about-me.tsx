@@ -1,13 +1,18 @@
+import { FC } from "react";
 import { routes } from "./router";
 import me from "../assets/me.jpeg";
 import githubIcon from "../assets/github.svg";
 import twitterIcon from "../assets/twitter.svg";
+import linkedinIcon from "../assets/linkedin.svg";
+import usePageLoad from "../hooks/usePageLoad";
 
-const AboutMe = () => {
+const AboutMe: FC = () => {
+  const isLoaded = usePageLoad();
+
   return (
     <section>
       <div className="about">
-        <div className="card">
+        <div className={`card ${isLoaded ? "loaded" : ""}`}>
           <div className="content">
             <img src={me} alt="Nikolay" />
             <h1>
@@ -19,12 +24,20 @@ const AboutMe = () => {
             <div className="position">SOFTWARE ENGINEER</div>
           </div>
           <div className="socials">
-            <a href="https://github.com/jekovniki" target="_blank">
-              <img src={githubIcon} alt="GitHub" />
-            </a>
-            <a href="https://x.com/ZhekovN" target="_blank">
-              <img src={twitterIcon} alt="Twitter X" />
-            </a>
+            <div>
+              <a href="https://github.com/jekovniki" target="_blank">
+                <img src={githubIcon} alt="GitHub" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/nikolay-zhekov-529547167/"
+                target="_blank"
+              >
+                <img src={linkedinIcon} alt="LinkedIn" />
+              </a>
+              <a href="https://x.com/ZhekovN" target="_blank">
+                <img src={twitterIcon} alt="Twitter X" />
+              </a>
+            </div>
           </div>
         </div>
         <div className="text">

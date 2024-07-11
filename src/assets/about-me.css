@@ -28,9 +28,18 @@ section {
 }
 
 .about .card {
+  opacity: 0;
+  margin-top: 300px;
+  transition: 0.8s;
   width: 375px;
   font-family: "Montserrat", sans-serif;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.about .card.loaded {
+  opacity: 1;
+  margin-top: 0;
+  transition: 0.8s;
 }
 
 .about .card .content {

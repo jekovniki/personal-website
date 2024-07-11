@@ -6,6 +6,15 @@
   background-color: #fff;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   font-family: "Poppins", sans-serif;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+
+.timeline-box.loaded {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
 }
 
 .timeline-box > div {

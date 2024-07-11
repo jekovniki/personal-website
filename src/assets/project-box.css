@@ -3,6 +3,15 @@
   background-color: var(--white);
   margin-bottom: 2rem;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+
+.project-box.loaded {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
 }
 
 .project-box .content {

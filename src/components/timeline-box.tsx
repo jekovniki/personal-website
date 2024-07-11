@@ -1,5 +1,6 @@
 import { FC, ReactNode } from "react";
 import "../assets/timeline-box.css";
+import usePageLoad from "../hooks/usePageLoad";
 
 export interface TimelineBoxProps {
   period: string;
@@ -16,8 +17,10 @@ export const TimelineBox: FC<TimelineBoxProps> = ({
   companyLocation,
   text,
 }) => {
+  const loaded = usePageLoad();
+
   return (
-    <div className="timeline-box">
+    <div className={`timeline-box ${loaded ? "loaded" : ""}`}>
       <div className="timeline-main">
         <h4>{period}</h4>
         <h3>{position}</h3>
