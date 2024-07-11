@@ -1,8 +1,12 @@
 import { FC } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { routes } from "../pages/router";
+import useWindowWidth from "../hooks/useWindowWidth";
+import { MobileMenu } from "../components/mobile-menu";
 
 const Header: FC = () => {
+  const windowWidth = useWindowWidth();
+
   return (
     <header>
       <div className="left-side">
@@ -15,15 +19,19 @@ const Header: FC = () => {
           </span>
         </Link>
       </div>
-      <nav>
-        <ul>
-          {routes.map((route) => (
-            <NavLink key={route.key} to={route.route}>
-              {route.name.toUpperCase()}
-            </NavLink>
-          ))}
-        </ul>
-      </nav>
+      {windowWidth > 767 ? (
+        <nav>
+          <ul>
+            {routes.map((route) => (
+              <NavLink key={route.key} to={route.route}>
+                {route.name.toUpperCase()}
+              </NavLink>
+            ))}
+          </ul>
+        </nav>
+      ) : (
+        <MobileMenu routes={routes} />
+      )}
     </header>
   );
 };
