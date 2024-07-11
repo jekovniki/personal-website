@@ -1,8 +1,9 @@
+import { FC } from "react";
 import githubIcon from "../assets/github.svg";
 import twitterIcon from "../assets/twitter.svg";
 import linkedinIcon from "../assets/linkedin.svg";
 
-const Footer = () => {
+const Footer: FC = () => {
   return (
     <footer>
       <div>

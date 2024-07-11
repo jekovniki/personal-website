@@ -1,14 +1,7 @@
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 import "../assets/timeline-box.css";
 import usePageLoad from "../hooks/usePageLoad";
-
-export interface TimelineBoxProps {
-  period: string;
-  position: string;
-  companyName: string;
-  companyLocation: string;
-  text: ReactNode;
-}
+import { TimelineBoxProps } from "../interfaces/resume";
 
 export const TimelineBox: FC<TimelineBoxProps> = ({
   period,

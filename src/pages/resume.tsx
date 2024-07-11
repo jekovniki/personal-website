@@ -1,8 +1,9 @@
+import { FC } from "react";
 import { TimelineBox } from "../components/timeline-box";
 import { Title } from "../components/title";
 import { EXPERIENCE } from "../data/resume";
 
-const Resume = () => {
+const Resume: FC = () => {
   return (
     <section className="full">
       <div className="content-box">

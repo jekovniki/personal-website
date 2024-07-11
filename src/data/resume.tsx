@@ -1,4 +1,4 @@
-import { TimelineBoxProps } from "../components/timeline-box";
+import { TimelineBoxProps } from "../interfaces/resume";
 
 export const EXPERIENCE: TimelineBoxProps[] = [
   {

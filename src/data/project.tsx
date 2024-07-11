@@ -1,4 +1,4 @@
-import { ProjectBoxProps } from "../components/project-box";
+import { ProjectBoxProps } from "../interfaces/projects";
 import commenterImage from "../assets/commenter.png";
 import drupalImage from "../assets/drupal.jpg";
 

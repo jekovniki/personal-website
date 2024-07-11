@@ -1,13 +1,7 @@
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 import "../assets/project-box.css";
 import usePageLoad from "../hooks/usePageLoad";
-
-export interface ProjectBoxProps {
-  name: string;
-  role: string;
-  text: ReactNode;
-  image: string;
-}
+import { ProjectBoxProps } from "../interfaces/projects";
 
 export const ProjectBox: FC<ProjectBoxProps> = ({
   name,

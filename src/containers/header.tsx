@@ -1,7 +1,8 @@
+import { FC } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { routes } from "../pages/router";
 
-const Header = () => {
+const Header: FC = () => {
   return (
     <header>
       <div className="left-side">

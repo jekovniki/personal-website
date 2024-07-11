@@ -1,10 +1,11 @@
+import { FC } from "react";
 import { Title } from "../components/title";
 import "../assets/projects.css";
 import { PROJECTS } from "../data/project";
 import { ProjectBox } from "../components/project-box";
 import usePageLoad from "../hooks/usePageLoad";
 
-const Projects = () => {
+const Projects: FC = () => {
   const loaded = usePageLoad();
 
   return (
