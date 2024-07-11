@@ -1,13 +1,7 @@
+import { Route } from "../interfaces/routes";
 import AboutMe from "./about-me";
 import Projects from "./projects";
 import Resume from "./resume";
-
-interface Route {
-  name: string;
-  key: string;
-  route: string;
-  element: any;
-}
 
 export const routes: Route[] = [
   {
