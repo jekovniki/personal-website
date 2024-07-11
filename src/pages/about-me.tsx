@@ -40,7 +40,7 @@ const AboutMe: FC = () => {
             </div>
           </div>
         </div>
-        <div className="text">
+        <div className={`text ${isLoaded ? "loaded" : ""}`}>
           <p className="greeting">Hello</p>
           <p className="presentation">I'm software engineer</p>
           <div className="buttons">

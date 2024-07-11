@@ -88,6 +88,13 @@ section {
 .about .text {
   width: 375px;
   font-family: "Montserrat", sans-serif;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.about .text.loaded {
+  opacity: 1;
+  transition: 0.8s;
 }
 
 .about .greeting {
