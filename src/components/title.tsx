@@ -1,5 +1,4 @@
 import { ReactNode, FC } from "react";
-import "../assets/title.css";
 import usePageLoad from "../hooks/usePageLoad";
 
 export const Title: FC<{ children: ReactNode }> = ({ children }) => {

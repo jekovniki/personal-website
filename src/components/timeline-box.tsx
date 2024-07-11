@@ -1,5 +1,4 @@
 import { FC } from "react";
-import "../assets/timeline-box.css";
 import usePageLoad from "../hooks/usePageLoad";
 import { TimelineBoxProps } from "../interfaces/resume";
 

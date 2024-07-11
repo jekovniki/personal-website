@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("./assets/about-me.css");
 
 * {
   --background: #e6dace;
@@ -178,4 +177,317 @@ section.full {
 .content-box {
   max-width: 725px;
   width: 90%;
+}
+
+/* About page */
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about {
+  width: 900px;
+  max-width: 90vw;
+  display: flex;
+  gap: 2rem;
+}
+
+/* Card */
+
+.about .card {
+  background-color: var(--background-light);
+  height: 525.78px;
+  margin-top: -1.5rem;
+}
+
+.about .card img {
+  width: 50%;
+  width: 205px;
+  height: 205px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about .card {
+  opacity: 0;
+  margin-top: 300px;
+  transition: 0.8s;
+  width: 375px;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.about .card.loaded {
+  opacity: 1;
+  margin-top: 0;
+  transition: 0.8s;
+}
+
+.about .card .content {
+  height: calc(100% - 53px);
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+.about .card .content img {
+  margin-top: 4rem;
+}
+
+.about .card .content h1 {
+  font-size: 27px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.about .card .content .line {
+  height: 2px;
+  width: 50px;
+  margin-bottom: 25px;
+  background-color: var(--primary);
+}
+
+.about .card .content .position {
+  letter-spacing: 3px;
+}
+
+.about .card .socials {
+  height: 53px;
+  background: var(--white);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.about .card .socials img {
+  width: 25px;
+  height: 25px;
+}
+
+/* Text */
+
+.about .text {
+  width: 375px;
+  font-family: "Montserrat", sans-serif;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.about .text.loaded {
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.about .greeting {
+  font-size: 100px;
+  line-height: 100px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.about .presentation {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.about .description p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.about .buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 4rem auto;
+}
+
+/* Projects */
+
+.projects .description {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  line-height: 1.5em;
+  text-align: center;
+  padding-bottom: 3rem;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+
+.projects .description.loaded {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
+}
+
+.projects .content-box {
+  padding-bottom: 4rem;
+}
+
+/* Project box */
+
+.project-box {
+  display: flex;
+  background-color: var(--white);
+  margin-bottom: 2rem;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+
+.project-box.loaded {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
+}
+
+.project-box .content {
+  width: 60%;
+}
+
+.project-box img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-box .content .heading {
+  display: flex;
+  gap: 2rem;
+}
+
+.project-box .content .heading .side-line {
+  margin-top: 64px;
+  width: 10px;
+  height: 50px;
+  background-color: var(--primary);
+}
+
+.project-box .content .heading h2 {
+  margin-top: 67px;
+  margin-bottom: 6px;
+  font-family: "Poppins", sans-serif;
+  color: var(--primary);
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.project-box .content .heading h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+}
+
+.project-box .content .text {
+  padding: calc(2rem + 10px);
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+/* Timeline box */
+.timeline-box {
+  width: auto;
+  padding: 60px 35px;
+  display: flex;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  font-family: "Poppins", sans-serif;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+
+.timeline-box.loaded {
+  opacity: 1;
+  transform: translateY(0);
+  transition: 1s;
+}
+
+.timeline-box > div {
+  width: 35%;
+}
+
+.timeline-box > div + div {
+  width: 65%;
+}
+
+.timeline-box ul {
+  display: flex;
+  flex-flow: column;
+}
+
+.timeline-box .timeline-main h4 {
+  color: var(--primary);
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.timeline-box .timeline-main h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+  font-weight: 200;
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+}
+
+.timeline-box .timeline-main h5 {
+  margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.timeline-box .timeline-main h6 {
+  margin-bottom: 0;
+  margin-top: 0.25rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+/* Title component */
+
+.title-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.title-wrapper.loaded {
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.title-wrapper h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 35px;
+  line-height: 1em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.title-wrapper .box {
+  width: 20px;
+  height: 20px;
 }

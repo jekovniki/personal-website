@@ -1,5 +1,4 @@
 import { FC } from "react";
-import "../assets/project-box.css";
 import usePageLoad from "../hooks/usePageLoad";
 import { ProjectBoxProps } from "../interfaces/projects";
 
