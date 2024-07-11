@@ -360,13 +360,13 @@ section {
   padding-bottom: 3rem;
   opacity: 0;
   transform: translateY(100px);
-  transition: 1s;
+  transition: 0.4s;
 }
 
 .projects .description.loaded {
   opacity: 1;
   transform: translateY(0);
-  transition: 1s;
+  transition: 0.4s;
 }
 
 .projects .content-box {
@@ -382,13 +382,13 @@ section {
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   opacity: 0;
   transform: translateY(100px);
-  transition: 1s;
+  transition: 0.4s;
 }
 
 .project-box.loaded {
   opacity: 1;
   transform: translateY(0);
-  transition: 1s;
+  transition: 0.4s;
 }
 
 .project-box img {
@@ -462,13 +462,13 @@ section {
   font-family: "Poppins", sans-serif;
   opacity: 0;
   transform: translateY(100px);
-  transition: 1s;
+  transition: 0.4s;
 }
 
 .timeline-box.loaded {
   opacity: 1;
   transform: translateY(0);
-  transition: 1s;
+  transition: 0.4s;
 }
 
 .timeline-box > div {
