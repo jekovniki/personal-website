@@ -6,7 +6,6 @@ import twitterIcon from "../assets/twitter.svg";
 import linkedinIcon from "../assets/linkedin.svg";
 import usePageLoad from "../hooks/usePageLoad";
 import useWindowWidth from "../hooks/useWindowWidth";
-import { Link } from "react-router-dom";
 import { NavigationButtons } from "../components/navigation-buttons";
 
 const AboutMe: FC = () => {
