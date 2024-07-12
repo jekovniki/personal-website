@@ -7,6 +7,7 @@ import linkedinIcon from "../assets/linkedin.svg";
 import usePageLoad from "../hooks/usePageLoad";
 import useWindowWidth from "../hooks/useWindowWidth";
 import { Link } from "react-router-dom";
+import { NavigationButtons } from "../components/navigation-buttons";
 
 const AboutMe: FC = () => {
   const isLoaded = usePageLoad();
@@ -27,20 +28,7 @@ const AboutMe: FC = () => {
             {windowWidth > 767 ? (
               <div className="position">SOFTWARE ENGINEER</div>
             ) : (
-              <div className="buttons">
-                <a
-                  href={routes.find((route) => route.key === "resume")?.route}
-                  className="button primary"
-                >
-                  {routes.find((route) => route.key === "resume")?.name}
-                </a>
-                <a
-                  href={routes.find((route) => route.key === "projects")?.route}
-                  className="button secondary"
-                >
-                  {routes.find((route) => route.key === "projects")?.name}
-                </a>
-              </div>
+              <NavigationButtons routes={routes} />
             )}
           </div>
           <div className="socials">
@@ -63,26 +51,7 @@ const AboutMe: FC = () => {
         <div className={`text ${isLoaded ? "loaded" : ""}`}>
           <p className="greeting">Hello</p>
           <p className="presentation">I'm a software engineer</p>
-          {windowWidth > 767 && (
-            <div className="buttons">
-              <Link
-                to={
-                  routes.find((route) => route.key === "resume")?.route || "/"
-                }
-                className="button primary"
-              >
-                {routes.find((route) => route.key === "resume")?.name}
-              </Link>
-              <Link
-                to={
-                  routes.find((route) => route.key === "projects")?.route || "/"
-                }
-                className="button secondary"
-              >
-                {routes.find((route) => route.key === "projects")?.name}
-              </Link>
-            </div>
-          )}
+          {windowWidth > 767 && <NavigationButtons routes={routes} />}
           <div className="description">
             <p>
               I'm a passionate software engineer who loves building web
