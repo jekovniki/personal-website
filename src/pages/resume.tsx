@@ -9,8 +9,9 @@ const Resume: FC = () => {
       <div className="content-box">
         <Title>Resume</Title>
         <div className="resume">
-          {EXPERIENCE.map((job) => (
+          {EXPERIENCE.map((job, id) => (
             <TimelineBox
+              key={id}
               period={job.period}
               position={job.position}
               companyLocation={job.companyLocation}

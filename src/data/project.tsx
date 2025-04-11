@@ -1,8 +1,33 @@
 import { ProjectBoxProps } from "../interfaces/projects";
 import commenterImage from "../assets/commenter.png";
 import drupalImage from "../assets/drupal.jpg";
+import ofertiraiMeImage from "../assets/ofertirai-me.jpg";
 
 export const PROJECTS: ProjectBoxProps[] = [
+  {
+    name: "Ofertirai.me",
+    role: "Front-end developer",
+    image: ofertiraiMeImage,
+    customCss: "image-contain",
+    text: (
+      <>
+        <p>Building the front-end part of the application using Next.js.</p>
+        <p>
+          Frontend: <strong>ReactJS</strong> (NextJS),{" "}
+          <strong>Tailwind CSS</strong>, <strong>ReactQuery</strong>.
+        </p>
+        <p>
+          <a
+            href="https://ofertirai.me/"
+            target="_blank"
+            className="colored-link"
+          >
+            See project
+          </a>
+        </p>
+      </>
+    ),
+  },
   {
     name: "Commenter.ai",
     role: "Full-stack developer and architect",
@@ -10,12 +35,24 @@ export const PROJECTS: ProjectBoxProps[] = [
     text: (
       <>
         <p>
-          By customer request I build a full-stack app that implements the
-          ChatGPT API to answer for comments on LinkedIn and etc.
+          Building a full-stack app that implements the ChatGPT API to answer
+          for comments on LinkedIn, Facebook and etc.
         </p>
         <p>
-          I used ReactJS for Front-end, NodeJS for backend and the database that
-          I used is Firestore. It's hosted on AWS server.
+          Frontend: <strong>ReactJS</strong> (vite)
+          <br />
+          Backend: <strong>NodeJS</strong> with Express,{" "}
+          <strong>ChatGPT API</strong>, <strong>Stripe</strong> implementation
+          for payments. Hosted on <strong>AWS</strong>
+        </p>
+        <p>
+          <a
+            href="https://commenter.ai/"
+            target="_blank"
+            className="colored-link"
+          >
+            See project
+          </a>
         </p>
       </>
     ),
@@ -27,12 +64,13 @@ export const PROJECTS: ProjectBoxProps[] = [
     text: (
       <>
         <p>
-          By customer request I build a custom plugin for Drupal 9, using PHP
-          and Javascript.
+          <strong>Drupal 9</strong> plugin build with <strong>PHP</strong> and{" "}
+          <strong>Javascript</strong>.
         </p>
         <p>
-          The plugin implements the WebRTC capturing in order to capture an
-          image from the admin's phone and directly upload it to the website.
+          The plugin implements the <strong>WebRTC API</strong> in order to
+          capture an image from the admin's phone and directly upload it to the
+          admin dashboard.
         </p>
         <p>
           <a

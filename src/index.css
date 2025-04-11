@@ -441,6 +441,11 @@ section {
   height: auto;
   object-fit: cover;
   margin-bottom: -5px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.project-box.image-contain img {
+  object-fit: contain;
 }
 
 .project-box .content .heading {

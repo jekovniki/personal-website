@@ -7,11 +7,16 @@ export const ProjectBox: FC<ProjectBoxProps> = ({
   role,
   text,
   image,
+  customCss,
 }) => {
   const loaded = usePageLoad();
 
   return (
-    <div className={`project-box ${loaded ? "loaded" : ""}`}>
+    <div
+      className={`project-box ${loaded ? "loaded" : ""} ${
+        customCss ? customCss : ""
+      }`}
+    >
       <div className="content">
         <div className="heading">
           <div className="side-line"></div>

@@ -17,7 +17,9 @@ const Projects: FC = () => {
         </div>
         {PROJECTS.map((project) => (
           <ProjectBox
+            key={project.name}
             name={project.name}
+            customCss={project.customCss}
             role={project.role}
             image={project.image}
             text={project.text}

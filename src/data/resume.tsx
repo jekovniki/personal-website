@@ -10,14 +10,32 @@ export const EXPERIENCE: TimelineBoxProps[] = [
       <div>
         <ul>
           <li>
-            <strong>Work on Hera AI</strong> | Part of the frontend team that
-            build the application using Angular.
+            <strong>Work on WordPress plugin</strong> | Build and manage a
+            wordpress plugin that implements the <strong>JackRabbit API</strong>{" "}
+            on <strong>WordPress</strong> websites. Allows for adding additional
+            data to the original <strong>JackRabbit</strong> request and allows
+            for dynamically generating wizards and elements around the data that
+            comes from <strong>JackRabbit</strong>.
+          </li>
+          <li>
+            <strong>Work on fermata.tech</strong> | Part of the frontend team
+            that build a dashboard for the company and manage some of their
+            frontend applications. Front-end app was <strong>React.js</strong>{" "}
+            (Next.js and vite).
+          </li>
+          <li>
+            <strong>Work on Hera AI</strong> | I was part of the frontend team
+            that build the application using <strong>Angular</strong>.
           </li>
           <li>
             <strong>Build HR application</strong> | Build the internal HR system
-            application for requesting vacation, handling company benefits and
-            etc. Technologies - PostgreSQL, Redis, NodeJS, Typescript, ReactJS,
-            Express, Server sent events.
+            application of the companies. Key functionalities - requesting
+            vacation, handling company benefits, finance module for handling
+            company invoices and etc. Technologies - <strong>PostgreSQL</strong>
+            , <strong>Redis</strong>, <strong>NodeJS</strong>,
+            <strong>Typescript</strong>, <strong>ReactJS</strong>,{" "}
+            <strong>Express</strong>, <strong>Server sent events</strong>. I was
+            the lead developer of the project.
           </li>
           <li>
             <strong>
@@ -26,15 +44,18 @@ export const EXPERIENCE: TimelineBoxProps[] = [
                 jay-data
               </a>
               &nbsp;platform
-            </strong>
-            | Part of the team that build the video layer using web components
-            and typescript.
+            </strong>{" "}
+            | Part of the team that build the video layer using{" "}
+            <strong>web components</strong>
+            and <strong>typescript</strong>.
           </li>
           <li>
             <strong>Build Online Casino</strong> | Build full stack web
-            application using technologies like NodeJS, ReactJS, Typescript,
-            MongoDB, Mongoose and Redis, Express, RabbitMQ. I was part of small
-            team of 3 people, where I was the senior software engineer.
+            application using technologies like <strong>NodeJS</strong>{" "}
+            (Express), <strong>ReactJS</strong>, <strong>Typescript</strong>,
+            <strong>MongoDB</strong>, <strong>Mongoose</strong> and{" "}
+            <strong>Redis</strong>, <strong>RabbitMQ</strong>. I was part of
+            small team of 3 people, where I was the senior software engineer.
           </li>
         </ul>
       </div>
@@ -49,18 +70,18 @@ export const EXPERIENCE: TimelineBoxProps[] = [
       <div>
         <ul>
           <li>
-            <strong>Work on Hera AI</strong> | Part of the frontend team that
-            build the application using Angular.
-          </li>
-          <li>
-            Enhance and improve the authentication and authorization service for
-            our product. Build API using REST and Websocket. Use gRPC and NATS
-            for internal communication. Work on splitting our monolithic
+            <strong>
+              Backend - NodeJS, REST, Websocket, Microservices, gRPC, STAN,
+              NATS, MySQL, Clickhouse
+            </strong>{" "}
+            | Enhance and improve the authentication and authorization service
+            for our product. Build API using REST and Websocket. Use gRPC and
+            NATS for internal communication. Work on splitting our monolithic
             architecture into microservices. Work with Kong Gateway.
           </li>
           <li>
-            <strong>Build components with ReactJS</strong> | Build components
-            for the product of the company using ReactJS and styled components.
+            <strong>Frontend - ReactJS</strong> | Build components for the
+            product of the company using ReactJS and styled components.
           </li>
         </ul>
       </div>

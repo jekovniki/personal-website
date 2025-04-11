@@ -5,4 +5,5 @@ export interface ProjectBoxProps {
   role: string;
   text: ReactNode;
   image: string;
+  customCss?: string;
 }
