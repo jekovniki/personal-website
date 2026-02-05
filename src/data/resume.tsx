@@ -2,8 +2,27 @@ import { TimelineBoxProps } from "../interfaces/resume";
 
 export const EXPERIENCE: TimelineBoxProps[] = [
   {
-    period: "Mar 2023 - Present",
-    position: "Full Stack Developer",
+    period: "Oct 2025 - Present",
+    position: "Senior Full Stack Developer",
+    companyName: "23 Broadway",
+    companyLocation: "Sofia, Bulgaria",
+    text: (
+      <div>
+        <ul>
+          <li>
+            <strong>Work on Atlas</strong> | Work on the main product platform,
+            using technologies like NestJS, NextJS, Refine, Redshift, Kafka,
+            PostgreSQL, Redis, AWS, Terraform and etc. Maintain the Saas product
+            that we have and develop new features, splitting our monolithic
+            approach to a more scalable microservices.
+          </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    period: "Mar 2023 - Oct 2025",
+    position: "Senior Full Stack Developer",
     companyName: "AUG.global",
     companyLocation: "Sofia, Bulgaria",
     text: (

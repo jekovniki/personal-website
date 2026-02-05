@@ -2,8 +2,43 @@ import { ProjectBoxProps } from "../interfaces/projects";
 import commenterImage from "../assets/commenter.png";
 import drupalImage from "../assets/drupal.jpg";
 import ofertiraiMeImage from "../assets/ofertirai-me.jpg";
+import amcManagerImage from "../assets/amc-manager.png";
 
 export const PROJECTS: ProjectBoxProps[] = [
+  {
+    name: "AMC Manager",
+    role: "Software Architect and engineer",
+    image: amcManagerImage,
+    customCss: "image-contain",
+    text: (
+      <>
+        <p>
+          Building my own product idea of a dashboard that helps Asset
+          Management companies. It has also KYC capabilities and etc.
+        </p>
+        <p>
+          Frontend: <strong>ReactJS</strong> (vite),{" "}
+          <strong>Tailwind CSS</strong>, <strong>ReactQuery</strong>,{" "}
+          <strong>Shadcn</strong>
+        </p>
+        <p>
+          Backend: <strong>NestJs (NodeJS)</strong>,{" "}
+          <strong>stock exchange api</strong>, <strong>KYC datasets</strong>,{" "}
+          <strong>PostgreSQL</strong> database, <strong>REST</strong> and{" "}
+          <strong>SSE</strong>. Hosted on Railway.
+        </p>
+        <p>
+          <a
+            href="https://amc-manager.com/"
+            target="_blank"
+            className="colored-link"
+          >
+            See project
+          </a>
+        </p>
+      </>
+    ),
+  },
   {
     name: "Ofertirai.me",
     role: "Front-end developer",
